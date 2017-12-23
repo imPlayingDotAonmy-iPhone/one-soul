@@ -127,9 +127,9 @@ header nav,
 
 .intro {
   text-align: center;
-  font-family: Helvetica, Garamond, monospace;
+  font-family: "Helvetica", Garamond, monospace;
   padding: 1rem;
-  width: 600px;
+  max-width: 600px;
   margin: auto;
 }
 
