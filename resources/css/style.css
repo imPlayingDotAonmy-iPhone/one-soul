@@ -6,7 +6,7 @@ html {
 }
 
 body {
-  font-family: Georgia, "Times", sans-serif;
+  font-family: Arial, sans-serif, Georgia, "Times", serif;
   line-height: 1.44;
   background-color: white;
   margin-top: 60px;
@@ -47,21 +47,29 @@ h1,
 h2,
 h3 {
   font-weight: 700;
-  margin: 1.89rem 10px;
+  margin: 1.55rem 0;
 }
 
 h2 {
   font-size: 1.55rem;
-  font-family: Garamond, monospace, serif;
+  font-family: "Garamond", "monospace", serif;
   width: 100%;
   color: white;
   background-color: black;
   padding-left: 8px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  h2 {
+    width: 400px;
+    text-align: left;
+    padding: 1rem;
+  }
 }
 
 p {
-  margin: 10px;
-  padding: 1rem 0;
+  margin: 20px 10px;
   font-weight: 500;
 }
 
@@ -74,10 +82,11 @@ background-color: black;
 color: white;
 justify-content: space-between;
 padding: 1rem;
-height: 60px;
+
 }
 
 header {
+  height: 60px;
   position: fixed;
   top: 0;
   z-index: 10;
@@ -85,11 +94,9 @@ header {
 }
 
 .logo {
-  font-family: monospace;
+  font-family: "monospace", "Times", serif;
   font-size: 1.11rem;
 }
-
-
 
 /* Main
 */
@@ -105,13 +112,13 @@ header {
 }
 
 .main-banner h1 {
-  font-family: monospace;
-  font-size: 2.55rem;
+  font-family: "monospace", serif;
+  font-size: 2.22rem;
   font-weight: 500;
   padding-left: 6px;
   margin: 0;
+  max-width: 499px;
 }
-
 
 header nav,
 .main-banner p {
@@ -120,25 +127,67 @@ header nav,
 
 .intro {
   text-align: center;
+  font-family: Helvetica, Garamond, monospace;
+  padding: 1rem;
+  width: 600px;
+  margin: auto;
+}
+
+/* footer
+--------------------*/
+footer {
+  justify-content: center;
+  height: 70px;
+}
+
+@media only screen and (min-width: 750px) {
+  footer {
+    justify-content: flex-start;
+    height: 80px;
+  }
 }
 
 /**/
 /**/
 /**/
-@media only screen and (min-width: 450px)
-                    and (max-width: 750px) {
+@media only screen and (min-width: 750px) {
   header nav {
-    /*display: inline-flex;
+    /*display: flex;
     width: 60%;
     justify-content: space-around;*/
   }
 
-  .main-banner {
+  html {
+    font-size: 18px;
+  }
+
+  body {
+    font-family: "Georgia", "Times", serif;
+  }
+
+  main p {
+    padding: 1rem;
   }
 
   .main-banner p {
     display: block;
+    font-family: "Comic Sans", Arial, "Times", serif;
+    font-style: oblique;
   }
+
+  .main-banner {
+    height: 18rem;
+  }
+}
+/**/
+/**/
+/**/
+
+/**/
+/**/
+/**/
+@media only screen and (min-width: 850px) {
+
 }
 /**/
 /**/
